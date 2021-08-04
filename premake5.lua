@@ -1,14 +1,3 @@
-
-workspace "Kronos"
-architecture "x86_64"
-startproject "KronosEditor"
-
-configurations { "Debug", "Release", "Dist" }
-flags { "MultiProcessorCompile" }
-
-outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
-
-
 project "GLFW"
 	kind "StaticLib"
 	language "C"
